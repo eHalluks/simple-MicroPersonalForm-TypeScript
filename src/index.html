@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Form</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+
+    <body>
+
+        <div class="main-container">
+
+            <header>
+                <div>
+                    <h1>Personal form</h1>
+                </div>
+                <div>
+                    <div>
+                        <p><strong>Date</strong></p>
+                        <p id="currDate"></p>
+                    </div>
+                </div>
+            </header>
+
+            <section>
+
+                <div class="form-container">
+
+                    <form id="formToRead">
+                        <label>
+                            *Imię
+                            <input type="text" name="name" id="nameID" placeholder="min 3 max 50" maxlength="50" minlength="3" required>
+                        </label>
+                        <label>
+                            *Nazwisko
+                            <input type="text" name="surname" id="surnameID" placeholder="min 3 max 50" maxlength="50" minlength="3" required>
+                        </label>
+                        <label>
+                            *Wiek
+                            <input type="text" name="age" id="ageID" placeholder="min 1 max 3" maxlength="3" minlength="1" required>
+                        </label>
+                        <label>
+                            *Miejsce urodzenia
+                            <input type="text" name="country" id="countryID" placeholder="min 3 max 50" maxlength="50" minlength="3" required>
+                        </label>
+                        <button type="submit" id="submitBtn">Dodaj</button>
+                    </form>
+
+                </div>
+
+                <div class="list-container">
+                    <ul id="fromLocalStorage"></ul>
+                </div>
+
+            </section>
+
+            <footer>
+                <div>
+                    <a href="#">Git&Hub</a>
+                    <a href="#">Udemy&Course</a>
+                    <a href="#">Mail&Box</a>
+                </div>
+            </footer>
+
+        </div>
+
+    <script src="../dist/index.js"></script>
+
+    </body>
+
+</html>
